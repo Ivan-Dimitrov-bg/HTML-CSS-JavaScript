@@ -1,0 +1,18 @@
+﻿body {
+}
+p{
+	color:#0094ff;
+	font-family:Consolas,Edwardian Script ITC;
+    width:750px;
+}
+p:first-letter {
+	font-size:1.7em;
+    font-family:'Old English Text MT';
+	}
+p:first-line{
+	color:#0094ff;
+	font-weight:bold;
+}
+.hidden {
+    display:none;
+}
