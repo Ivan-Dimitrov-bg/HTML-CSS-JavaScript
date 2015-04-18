@@ -1,0 +1,19 @@
+﻿body {
+    margin-left:100px;
+}
+#logo {
+    width:100px;
+    height:100px;
+}
+header h1 {
+    margin-left:100px;
+    display:inline;
+}
+table, tr, th, td{
+    border: 3px solid black;
+    border-collapse:collapse;
+}
+    td, th {
+        text-align:center;
+        padding:5px;
+    }

@@ -1,0 +1,88 @@
+﻿body {
+}
+.general {
+    width:260px;
+    height:300px;
+}
+table, tr, td, th {
+     border-collapse: collapse;
+     border:1.5px solid;
+     border-color:gray;
+     padding: 2px 2px 2px 2px; 
+}
+
+#chk {
+    width:20px;
+    height:20px;
+}
+.grean {
+    background: #d1ede1;
+    height:30px;
+}
+.center {
+    text-align: center;
+
+}
+input.button {
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+height:20px;
+font-size:10px;
+font-family:Arial;
+background:#d4d0c8;
+border:1px thin ;
+}
+.right {
+    text-align:right;
+
+}
+.normal {
+    width:270px;
+}
+textarea {
+    height:60px;
+    width:240px;
+}
+#State {
+    width:50px;
+}
+#insitee {
+     border:none;
+     margin: -1px -1px -1px -1px;
+}
+.insite {
+    border:none;
+    border-right:1px solid; 
+    border-color:gray; 
+}
+#last {
+    border:none;
+}
+.trinsite {
+    border:none;
+}
+.zip {
+    width: 60px;
+}
+.tel {
+     width: 45px;
+}
+.telbody {
+    width: 100px;
+}
+#kod {
+     width: 200px;
+
+}
+#Month    {
+    width:25px
+}
+#Day {
+    width:25px
+}
+#Year {
+    width:40px
+}
+.insideTableTwo {
+    border:none;
+    padding:2px 2px 2px 0px;
+}

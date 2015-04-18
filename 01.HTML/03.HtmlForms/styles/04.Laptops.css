@@ -1,0 +1,68 @@
+﻿body {
+}
+[title=first]
+{
+	border:1px solid black;
+	border-spacing:0;
+	border-radius:10px 0px 0px 10px; 
+}
+td
+{
+	font-family: sans-serif
+}
+.tatle
+{
+	border-bottom:2px solid black;
+	color:black;
+}
+a
+{
+	color:#0099CC;
+}
+.insiteTD
+{
+	padding:4px 4px;
+	border:0px;
+}
+.firsttable
+{
+	border:2px solid black;
+	padding:3px 0px;
+}
+.black
+{
+	border:2px solid black;
+}
+.withoutborder
+{
+	border:0px;
+}
+.right
+{
+	text-align:right;
+}
+.insiteTD2
+{
+	padding:0px 15px;
+	border:0px;
+}
+.centar
+{
+	text-align:center;
+}
+.middle
+{
+	vertical-align:central;
+}
+.bigger
+{
+	height:60px
+}
+.lower
+{
+	height:10px
+}
+.bottom
+{
+	vertical-align:bottom
+}

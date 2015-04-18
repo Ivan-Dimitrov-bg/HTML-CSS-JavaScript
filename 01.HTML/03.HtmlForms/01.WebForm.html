@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WebForm</title>
+	<link rel="stylesheet" type="text/css" href="styles/01.WebFormStyle.css"/>
+	<script src="JavaScript/HiddenTask.js" type ="text/javascript"></script>
+</head>
+<body>
+		<form action = "#">			
+                <table class = "general">
+                <tfoot >
+                    <tr class = "grean">
+                        <td colspan = "2" class= "center">
+                            <input type="button" class = "button" value="Submit"/>
+                            <input type="button" class = "button" value="Clear This Form"/></td>
+                    </tr>
+                </tfoot>  
+		       <tbody> 
+                <tr>
+					<th class= "right">Last Name</th>
+					<td><input type="text" value="Nakov" class ="normal"/></td>
+				</tr>
+				<tr>
+					<th class= "right">First Name</th>
+					<td><input type="text" value="Svetlin" class ="normal"/></td>
+				</tr>
+				<tr>
+					<th class= "right">Address</th>
+					<td><textarea>17 Hristo Botew Str flor 3, apt.12</textarea></td>
+				</tr>
+				<tr>
+					<th class= "right">City</th>
+					<td>
+                        <table id = "insitee">
+                            <tr class="trinsite"> 
+                                <td class="insite"><input type="text" value="Kaspichan" /></td>
+                                <td class="insite"><label for="State"/>State</td>
+			                    <td id="last"><input type="text" name="state" id="State"/></td>
+                            </tr>
+                        </table>
+                    </td>
+				</tr>
+                <tr>
+                    <th class= "right">Zip/Postal Code</th>
+                    <td><input type="text" value="9325" class="zip"/></td>
+                </tr>
+                <tr>
+                    <th class= "right">Country</th>
+                    <td>
+                        <select name = "Country">
+                            <option value="Value 1" selected = "selected">Bulgaria</option>
+                            <option value="Value 1" >Italia</option>
+                            <option value="Value 1" >Taivan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">Phone(country code, area code, number)</th>
+                    <td>
+                        (+
+                        <input type="tel" id="kod" class="tel"/>
+                        )
+                        <input type="tel" id="front" class="tel"/>
+                        -
+                        <input type="tel" id="body"  class="telbody"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">E-mail</th>
+                    <td>
+                        <input type="email" value="nakov@kaspichan.org" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">Birth date</th>
+                    <td>
+                        <table class="insideTableTwo">
+                            <tr class="insideTableTwo" >
+                                <td class="insideTableTwo">
+                                    <label for="Month">Month</label>
+                                    <input type="text" name="state" id="Month"/>
+                                    <label for="Day" >Day</label>
+                                    <input type="text" name="state" id="Day" />
+                                    <label for="Year">Year(4 digit)</label>
+                                    <input type="text" name="state" id="Year" value="1980"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">Gender</th>
+                    <td>
+                        <select name = "Male">
+                            <option value="Value 1" selected = "selected">Male</option>
+                            <option value="Value 1">Fmale</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">Srarting date</th>
+                    <td>
+                        <input type="radio" id="Spring" name="date" checked="checked" value="Lom" />
+                        <label for="Spring" >Spring 2006</label>
+                        
+	                    <input type="radio" id="Summer" value="Ruse" name="date"/>
+                        <label for="Summer" >Summer 2006</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th class= "right">Comments/Questions</th>
+                    <td><textarea>Please send me more infomation about the lodging</textarea></td>
+                </tr>
+                </tbody> 
+
+			</table>
+		</form>
+        <hr/>
+		<input type="checkbox" name ="chack" id="chk" onclick="showHide()"/>
+		<label for="chk">View TASK..</label>
+		<br />
+		<img class="hidden" src="pictures/01.form.png" alt="taskFriends" />
+</body>
+</html>
+

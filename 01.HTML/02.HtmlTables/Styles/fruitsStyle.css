@@ -1,0 +1,21 @@
+﻿body {
+}
+.hidden {
+    display:none;
+}
+table {
+   width:650px;
+}
+th {
+    font-size:35px;
+    font-style:italic;
+  
+}
+td, th {
+
+}
+td {
+    padding:0 0 0 30px;
+    width:185px;
+    font-size:18px;
+}
