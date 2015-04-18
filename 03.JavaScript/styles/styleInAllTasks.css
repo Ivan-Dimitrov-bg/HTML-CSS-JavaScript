@@ -1,0 +1,147 @@
+﻿* {
+    margin-left: 20px;
+}
+body {
+    position:absolute;
+    
+}
+
+.task {
+    color:white;
+    border-top:1px solid green;
+    border-left:1px solid green;
+    font-family:Ariel;
+    font-size:18px;
+    width:400px;
+    margin:10px;
+    margin-left: 30px;
+    padding:10px;
+    text-align:center;
+    -webkit-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    -moz-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    display:inline-block;
+    position:relative;
+    background: url('../../images/fonInput2.png') repeat-x;
+    border-radius:15px;
+            
+}
+#bigtask {
+    width:550px;
+    text-align:left;
+}
+.allTasks {
+    display:inline-block;
+    width:200px;
+    position:relative;
+    margin-left:10px;
+    
+    
+}
+    .allTasks a {
+        background-color:#d9f354;
+        margin: -5px;
+        font-size:10px;
+        display:block;
+        width:auto;
+        color:black;
+
+    }
+
+
+.hint {
+    height:200px;
+    width:200px;
+    position:absolute;
+    margin-left: 850px;
+    margin-top: -260px;
+    box-shadow: 5px 5px 5px #888888 ;
+    border: 1px solid green;
+
+}
+
+.input {
+    position:relative;
+    margin-top: 0px;
+    background: url('../../images/fonInput2.png') repeat-x;
+    border:1px solid black;
+    border-radius:15px;
+    height:130px;
+    color:white;
+    width:790px;
+    -webkit-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    -moz-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+}
+input{
+    width:90px;
+    background-color:#d9f354;
+    margin-top:10px;
+}
+a {
+    text-decoration: none;
+    border:1px solid #8fbc2b;
+    border-radius:10px;
+    margin:20px;
+    padding:5px 15px;
+    color:white;
+    font-size:15px;
+    font-family:Arial;
+    margin-top:15px;
+    background-color:#8fbc2b;
+    width:300px;
+}
+a:hover{
+	text-decoration:underline;
+}
+
+#code {
+    margin-left:20px;
+    margin:10px;
+    width: 800px;
+    overflow:scroll;
+    display:block;
+    color:black;
+    background-color:#d9f354;
+    height:300px;
+    border: 1px solid #d9f354;
+}
+hr {
+}
+#js-console {
+   height:345px;
+   width: 780px;
+   margin-left:10px;
+   display:inline-block;
+}
+iframe {
+    display:inline-block;
+    width:420px;
+    height:345px;
+}
+.titleHM {
+    background: url('../../images/fonInput2.png') repeat-x;
+    color:white;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-size:18px;
+    border-radius:15px;
+    -webkit-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    -moz-box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    box-shadow: inset 0px 1px 5px 3px rgba(217,243,84,0.50);
+    text-align: justify;
+
+}
+.check {
+    display: inline-block;
+    text-align:center;
+    width:auto;
+}
+.biginput{
+    width:500px;
+    display:inline-block;
+}
+lebel {
+    display:inline-block;
+}

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">2.ShowSign</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+    <div class="task">Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="firstNumber">First Value:</label>
+    <input type="text" id="firstNumber"/>
+    <label for="secondNumber">Second Value:</label>
+    <input type="text" id="secondNumber"/>
+    <label for="thirdNumber">Third Value:</label>
+    <input type="text" id="thirdNumber"/>
+    <div><a href="#" class= "check" onclick ="ShowSign()">Check ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function ShowSign()
+        {
+            var firstValue = jsConsole.readFloat("#firstNumber");
+            var secondValue = jsConsole.readFloat("#secondNumber");
+            var thirdValue = jsConsole.readFloat("#thirdNumber");
+
+            if ((firstValue ) || (secondValue === undefined) || (firstValue == null))
+            {
+                jsConsole.writeLine("Please enter three numbers to test app");
+            }
+
+            // first way
+
+
+            ////if all positive the product is positive
+            //if ((firstValue == 0)||(secondValue == 0)||(thirdValue == 0))
+            //{
+            //    jsConsole.writeLine('The product ot this numbers is "0"');
+            //}
+            //else if ((firstValue > 0) && (secondValue > 0) && (thirdValue > 0))
+            //{
+            //    jsConsole.writeLine("The product ot this numbers is positive");
+            //}
+            //// if all negative or two are positive and only one is negative the product is negative
+            //else if (((firstValue > 0) && (secondValue > 0)) || ((firstValue > 0) && (thirdValue > 0)) || ((secondValue > 0) && (thirdValue > 0)) || ((firstValue < 0) && (secondValue < 0) && (thirdValue < 0))) 
+            //{
+            //    jsConsole.writeLine("The product ot this numbers is negative");
+            //}
+            //// if the case is here we have two negative and one positive number
+            //else
+            //{
+            //     jsConsole.writeLine("The product ot this numbers is positive");
+            //}
+
+            //second way
+
+            jsConsole.writeLine("The product ot this numbers is: " + (((firstValue == 0) || (secondValue == 0) || (thirdValue == 0)) ? "0" : ((firstValue > 0) && (secondValue > 0) && (thirdValue > 0)) ? "positive" : (((firstValue > 0) && (secondValue > 0)) || ((firstValue > 0) && (thirdValue > 0)) || ((secondValue > 0) && (thirdValue > 0)) || ((firstValue < 0) && (secondValue < 0) && (thirdValue < 0))) ? "negative" : "positive"));
+
+        }
+    </script>
+</body>
+</html>

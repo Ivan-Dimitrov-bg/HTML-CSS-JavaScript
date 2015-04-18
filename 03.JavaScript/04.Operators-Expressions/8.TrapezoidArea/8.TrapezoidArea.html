@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">8.TrapezoidArea</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+   <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Operators-Expressions </div>
+     <div class="task">Write an expression that calculates trapezoid's area by given sides a and b and height h</div>
+    <div class ="allTasks">
+    <a href ="../1.OddOrEven/1.OddOrEven.html">1.OddOrEven</a>
+    <a href ="../2.BooleanDivided7And5/2.BooleanDivided7And5.html">2.BooleanDivided7And5</a>
+    <a href ="../3.RectanglesArea/3.RectanglesArea.html">3.RectanglesArea</a>
+    <a href ="../4.ThirdDigit/4.ThirdDigit.html">4.ThirdDigit</a>
+    <a href ="../5.TheBit3/5.TheBit3.html">5.TheBit3</a>
+    <a href ="../6.CheckIfPointIsWithinACircle/6.CheckIfPointIsWithinACircle.html">6.CheckIfPointIsWithinACircle</a>
+    <a href ="../7.CheckPrime/7.CheckPrime.html">7.CheckPrime</a>
+    <a href ="../8.TrapezoidArea/8.TrapezoidArea.html">8.TrapezoidArea</a>
+    <a href ="../9.PointPositionCircleAndRectangle/9.PointPositionCircleAndRectangle.html">9.PointPositionCircleAndRectangle</a>
+    </div>
+
+    <!--Input-->
+    <div class="input">
+    <label for="baseA">baseA: </label>
+    <input type="text" id="baseA"/>
+    <label for="baseB">baseB: </label>
+    <input type="text" id="baseB"/>
+    <label for="heigth">heigth: </label>
+    <input type="text" id="heigth"/>
+    <div><a href="#" class= "check" onclick ="TrapezoidArea()">Check Number</a></div>
+    </div>
+    <hr/>
+    
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="http://www.youtube.com/embed/XGSy3_Czz8k"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/qF7HcvQnO10"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function TrapezoidArea() {
+            var baseA = jsConsole.readFloat("#baseA");
+            var baseB = jsConsole.readFloat("#baseB");
+            var heigth = jsConsole.readFloat("#heigth");
+
+            var tArea = ((baseA * baseB) / 2) * heigth
+            jsConsole.writeLine("TrapezoidArea is: " + tArea);
+
+        }
+    </script>
+</body>
+</html>

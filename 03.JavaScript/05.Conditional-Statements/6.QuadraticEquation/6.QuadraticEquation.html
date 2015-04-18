@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">6.QuadraticEquation</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+    <div class="task">Write a script that enters the coefficients a, b and c of a quadratic equation
+		a*x2 + b*x + c = 0 and calculates and prints its real roots. Note that quadratic equations may have 0, 1 or 2 real roots.
+</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="a">a:</label>
+    <input type="text" id="a"/>
+    <label for="b">b:</label>
+    <input type="text" id="b"/>
+    <label for="c">c:</label>
+    <input type="text" id="c"/>
+    <div><a href="#" class= "check" onclick ="QuadraticEquation()">Check ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function QuadraticEquation() {
+            var a = jsConsole.readFloat("#a");
+            var b = jsConsole.readFloat("#b");
+            var c = jsConsole.readFloat("#c");
+
+            var x1 = 0;
+            var x2 = 0;
+
+            var discriminant = (Math.pow(b, 2) - (4 * a * c));
+
+            if (discriminant == 0) {
+                jsConsole.writeLine("The equation has one root: х = " + (x1 = - b / 2*a)); 
+            }
+            if (discriminant < 0) {
+                jsConsole.writeLine("The equation havn't has a real root"); 
+
+            }
+            if (discriminant > 0) {
+
+                jsConsole.writeLine("The equation has a two root");
+                jsConsole.writeLine("x1 = " + (x1 = (-b + discriminant)/ 2*a));
+                jsConsole.writeLine("x2 = " + (x2 = (-b - discriminant) / 2 * a));
+            }
+        }
+
+    </script>
+</body>
+</html>

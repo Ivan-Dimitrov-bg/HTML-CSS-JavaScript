@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">7.CompareInteger</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+    <div class="task">Write a script that finds the greatest of given 5 variables..</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="One">One:</label>
+    <input type="text" id="One"/>
+    <label for="Two">Two:</label>
+    <input type="text" id="Two"/>
+    <label for="Three">Three:</label>
+    <input type="text" id="Three"/>
+    <label for="Four">Four:</label>
+    <input type="text" id="Four"/>
+    <br/>
+    <label for="Five">Five:</label>
+    <input type="text" id="Five"/>
+
+
+    <div class="check"><a href="#" class= "check" onclick ="CompareInteger()">Check ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function CompareInteger() {
+            var one = jsConsole.readFloat("#One");
+            var two = jsConsole.readFloat("#Two");
+            var three = jsConsole.readFloat("#Three");
+            var four = jsConsole.readFloat("#Four");
+            var five = jsConsole.readFloat("#Five");
+
+            // long way;
+            var biggestNumber = null;
+            if (one > biggestNumber) {
+                biggestNumber = one;
+                
+            }
+            if (two > biggestNumber) {
+                biggestNumber = two;
+            }
+            if (three > biggestNumber)
+            {
+                biggestNumber = three;
+            }
+            if (four > biggestNumber) {
+                biggestNumber = four;
+            }
+            if (five > biggestNumber) {
+                biggestNumber = five;
+            }
+            jsConsole.writeLine("long way : The Biggest number is : " + biggestNumber);
+
+            //short way
+            
+            jsConsole.writeLine("short way : The Biggest number is : " + Math.max(one, two, three, four, five));
+        }
+    </script>
+</body>
+</html>

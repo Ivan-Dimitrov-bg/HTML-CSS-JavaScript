@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">4.ChangeTextInRegions</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">You are given a text. Write a function that changes the text in all regions:
+(upcase)  text  (/upcase) to uppercase.
+(lowcase) text  (/lowcase) to lowercase
+(mixcase) text (/mixcase) to mix casing(random)
+We are mixcase living (/mixcase) in a (upcase) yellow submarine(/upcase). We (mixcase)don't(/(mixcase) have (lowcase)anything(/(lowcase) else.
+The expected result:
+We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+Regions can be nested
+
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.ReverseString/1.ReverseString.html">1.ReverseString</a>    
+    <a href ="../2.CheckBracketsInExpression/2.CheckBracketsInExpression.html">2.CheckBracketsInExpression</a>
+    <a href ="../3.CountSubstringContained/3.CountSubstringContained.html">3.CountSubstringContained</a>
+    <a href ="../4.ChangeTextInRegions/4.ChangeTextInRegions.html">4.ChangeTextInRegions</a>
+    <a href ="../5.ReplaceTextWithWhiteSpaces/5.ReplaceTextWithWhiteSpaces.html">5.ReplaceTextWithWhiteSpaces</a>
+    <a href ="../6.ExtractContentOfHTML/6.ExtractContentOfHTML.html">6.ExtractContentOfHTML</a>
+    <a href ="../7.ParsesAnURL/7.ParsesAnURL.html">7.ParsesAnURL</a>
+    <a href ="../8.ExtractEmailsFromText/8.ExtractEmailsFromText.html">8.ExtractEmailsFromText</a>
+    <a href ="../9.ExtractEmailsFromText/9.ExtractEmailsFromText.html">9.ExtractEmailsFromText</a>
+    <a href ="../10.ExtractPalindromesFromText/10.ExtractPalindromesFromText.html">10.ExtractPalindromesFromText</a>
+    <a href ="../11.FormatsStringUsingPlaceholders/11.FormatsStringUsingPlaceholders.html">11.FormatsStringUsingPlaceholders</a>
+    <a href ="../12.CreateHTMLULuseHTMLLI/12.CreateHTMLULuseHTMLLI.html">12.CreateHTMLULuseHTMLLI</a>
+    </div>
+
+      <!--Input-->
+    <!--<div class="input">-->
+<!--    <label for="array">Text</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    -->
+    <!--<div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>-->
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/zuZWpIQENBo"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+ <script>
+     jsConsole.writeLine("We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>." +
+         "We <mixcase>don't</mixcase> have <lowcase>TRALALA</lowcase> else.");
+     var text = "We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>."
+         + "We <mixcase>don't</mixcase> have <lowcase>TRALALA</lowcase> else.";
+     var objText = new String(text);
+     objText = doMixCase(objText);
+     objText = doUpcase(objText);
+     objText = doLowCase(objText);
+     jsConsole.writeLine(objText);
+
+     function doUpcase(text) {
+         var indexStart = text.indexOf("<upcase>");
+         while (indexStart > -1) {
+             var insedeText = text.substring(indexStart + 8, text.indexOf("</upcase>", indexStart))
+             var upperText = insedeText.toUpperCase();
+             text = text.replace(insedeText, upperText);
+             indexStart = text.indexOf("<upcase>", indexStart + 1);
+         }
+         return text;
+     }
+     function doMixCase(text) {
+         var indexStart = text.indexOf("<mixcase>");
+         while (indexStart > -1) {
+             var insedeText = text.substring(indexStart + 9, text.indexOf("</mixcase>", indexStart));
+             var mixedText = new String(insedeText);
+             for (var i = 0; i < mixedText.length ; i++) {
+                 if (i % 2 == 0) {
+                     mixedText = mixedText.replace(mixedText[i], mixedText[i].toUpperCase())
+                 }
+                 else {
+                     mixedText = mixedText.replace(mixedText[i], mixedText[i].toLowerCase())
+                 }
+             }
+             text = text.replace(insedeText, mixedText);
+             indexStart = text.indexOf("<mixcase>", indexStart + 1);
+         }
+         return text;
+     }
+     function doLowCase(text) {
+         var indexStart = text.indexOf("<lowcase>");
+         while (indexStart > -1) {
+             var insedeText = text.substring(indexStart + 9, text.indexOf("</lowcase>", indexStart));
+             var lowerText = insedeText.toLowerCase();
+             text = text.replace(insedeText, lowerText);
+             indexStart = text.indexOf("<lowcase>", indexStart + 1);
+         }
+         return text;
+     }
+
+	</script>
+
+</body>
+</html>

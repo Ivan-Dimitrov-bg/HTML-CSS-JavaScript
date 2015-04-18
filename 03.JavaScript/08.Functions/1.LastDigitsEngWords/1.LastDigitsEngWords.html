@@ -1,0 +1,91 @@
+﻿ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">1.LastDigitsEngWords</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+        <div class="task">Write a function that returns the last digit of given integer as an English word. Examples: 512 > "two", 1024 > "four", 12309 > "nine"
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.LastDigitsEngWords/1.LastDigitsEngWords.html">1.LastDigitsEngWords</a>
+    <a href ="../2.ReverseNumber/2.ReverseNumber.html">2.ReverseNumber</a>
+    <a href ="../3.OccurrencesOfWordInText/3.OccurrencesOfWordInText.html">3.OccurrencesOfWordInText</a>
+    <a href ="../4.NumberOfDivs/4.NumberOfDivs.html">4.NumberOfDivs</a>
+    <a href ="../5.CountNumberAppearsInArray/5.CountNumberAppearsInArray.html">5.CountNumberAppearsInArray</a>
+    <a href ="../6.CompareNeighborsInArray/6.CompareNeighborsInArray.html">6.CompareNeighborsInArray</a>
+    <a href ="../7.FirstBiggestElement/7.FirstBiggestElement.html">7.FirstBiggestElement</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="number">Number:</label>
+    <input type="text" class="biginput" id="number"/>
+    <div><a href="#" class="check" onclick ="Solutions()">Check ...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function Solutions()
+        {
+            someInt = jsConsole.readFloat("#number");
+            returnlastDigitString();
+                
+        }
+
+
+        function returnlastDigitString(){
+            var number = someInt % 10; // get last digit
+            switch (number) {
+                case 1:
+                    return jsConsole.writeLine(number + ": One");
+                    break;
+                case 2:
+                    return jsConsole.writeLine(number + ": Two");
+                    break;
+                case 3:
+                    return jsConsole.writeLine(number + ": Three");
+                    break;
+                case 4:
+                    return jsConsole.writeLine(number + ": Four");
+                    break; 
+                case 5:
+                    return jsConsole.writeLine(number + ": Five");
+                    break; 
+                case 6:
+                    return jsConsole.writeLine(number + ": Six");
+                        break;
+                case 7:
+                    return jsConsole.writeLine(number + ": Seven");
+                    break;
+                case 8:
+                    return jsConsole.writeLine(number + ": Eight");
+                    break;
+                case 9:
+                    return jsConsole.writeLine(number + ": Nine");
+                    break;
+                case 0:
+                    return jsConsole.writeLine(number + ": Zaro");
+                    break;
+                default:
+                    return jsConsole.writeLine("The input is not a number");
+            }
+        }
+        
+    </script>
+</body>
+</html>

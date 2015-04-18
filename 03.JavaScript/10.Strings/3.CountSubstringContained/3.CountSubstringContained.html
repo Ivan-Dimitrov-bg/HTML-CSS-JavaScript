@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">3.CountSubstringContained</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).
+		Example: The target substring is "in". The text is as follows:
+We are living in an yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.
+The result is: 9.
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.ReverseString/1.ReverseString.html">1.ReverseString</a>    
+    <a href ="../2.CheckBracketsInExpression/2.CheckBracketsInExpression.html">2.CheckBracketsInExpression</a>
+    <a href ="../3.CountSubstringContained/3.CountSubstringContained.html">3.CountSubstringContained</a>
+    <a href ="../4.ChangeTextInRegions/4.ChangeTextInRegions.html">4.ChangeTextInRegions</a>
+    <a href ="../5.ReplaceTextWithWhiteSpaces/5.ReplaceTextWithWhiteSpaces.html">5.ReplaceTextWithWhiteSpaces</a>
+    <a href ="../6.ExtractContentOfHTML/6.ExtractContentOfHTML.html">6.ExtractContentOfHTML</a>
+    <a href ="../7.ParsesAnURL/7.ParsesAnURL.html">7.ParsesAnURL</a>
+    <a href ="../8.ExtractEmailsFromText/8.ExtractEmailsFromText.html">8.ExtractEmailsFromText</a>
+    <a href ="../9.ExtractEmailsFromText/9.ExtractEmailsFromText.html">9.ExtractEmailsFromText</a>
+    <a href ="../10.ExtractPalindromesFromText/10.ExtractPalindromesFromText.html">10.ExtractPalindromesFromText</a>
+    <a href ="../11.FormatsStringUsingPlaceholders/11.FormatsStringUsingPlaceholders.html">11.FormatsStringUsingPlaceholders</a>
+    <a href ="../12.CreateHTMLULuseHTMLLI/12.CreateHTMLULuseHTMLLI.html">12.CreateHTMLULuseHTMLLI</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="text">Text</label>
+    <input type="text" class="biginput" id="text"/>
+    <br/>
+    <label for="number">substring</label>
+    <input type="text" id="substring"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countSubstring()">Check...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/zuZWpIQENBo"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       function countSubstring() {
+           var text = jsConsole.read("#text");
+           var sub = jsConsole.read("#substring");
+           var result = countAppearances(text, sub);
+           jsConsole.writeLine(result + " appearances on the substring " + "'" + sub + "'!");
+
+       }
+       function countAppearances(text, sub) {
+           text = text.toLowerCase();
+           sub = sub.toLowerCase();
+           var indexOfSub = text.indexOf(sub);
+           var count = 0;
+           while (indexOfSub>-1) {
+               count++;
+               indexOfSub = text.indexOf(sub, indexOfSub + 1);
+           }
+           return count;
+       }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">9.ExtractPalindromesFromText</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">"Write a function for extracting all email addresses from given text. All substrings that match the format  &ltidentifier&gt@ &lthost&gt…&ltdomain&gt  should be recognized as emails. Return the emails as array of strings."</div>
+
+<div class ="allTasks">
+    <a href ="../1.ReverseString/1.ReverseString.html">1.ReverseString</a>    
+    <a href ="../2.CheckBracketsInExpression/2.CheckBracketsInExpression.html">2.CheckBracketsInExpression</a>
+    <a href ="../3.CountSubstringContained/3.CountSubstringContained.html">3.CountSubstringContained</a>
+    <a href ="../4.ChangeTextInRegions/4.ChangeTextInRegions.html">4.ChangeTextInRegions</a>
+    <a href ="../5.ReplaceTextWithWhiteSpaces/5.ReplaceTextWithWhiteSpaces.html">5.ReplaceTextWithWhiteSpaces</a>
+    <a href ="../6.ExtractContentOfHTML/6.ExtractContentOfHTML.html">6.ExtractContentOfHTML</a>
+    <a href ="../7.ParsesAnURL/7.ParsesAnURL.html">7.ParsesAnURL</a>
+    <a href ="../8.ExtractEmailsFromText/8.ExtractEmailsFromText.html">8.ExtractEmailsFromText</a>
+    <a href ="../9.ExtractEmailsFromText/9.ExtractEmailsFromText.html">9.ExtractEmailsFromText</a>
+    <a href ="../10.ExtractPalindromesFromText/10.ExtractPalindromesFromText.html">10.ExtractPalindromesFromText</a>
+    <a href ="../11.FormatsStringUsingPlaceholders/11.FormatsStringUsingPlaceholders.html">11.FormatsStringUsingPlaceholders</a>
+    <a href ="../12.CreateHTMLULuseHTMLLI/12.CreateHTMLULuseHTMLLI.html">12.CreateHTMLULuseHTMLLI</a>
+    </div>
+
+      <!--Input-->
+<!--    <div class="input">
+    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>-->
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/zuZWpIQENBo"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+	<script>
+	    var text = "Here are some emails asen.asenov@abv.bg and may be some more mails anreiKirev@gmail.bg ";
+	    jsConsole.writeLine(text);
+	    var emailArr = [];
+	    var index = text.indexOf("@");
+	    while (index > -1) {
+	        if (text[index - 1] != " " && text[index + 1] != " ") {
+	            var identifier = text.substring(text.lastIndexOf(" ", index - 1), index);
+	            var host = text.substring(index + 1, text.indexOf(".", index + 1));
+	            var domain = text.substring(text.indexOf(".", index + 1) + 1, text.indexOf(" ", text.indexOf(".", index + 1) + 1));
+	            var email = identifier + "@" + host + "." + domain;//it's not working slow for 5 elements
+	            emailArr.push(email);
+	            index = text.indexOf("@", index + 1);
+	        }
+	    }
+	    for (var email in emailArr) {
+	        jsConsole.writeLine(emailArr[email]);
+	    }
+
+
+
+	</script>
+
+</body>
+</html>
+

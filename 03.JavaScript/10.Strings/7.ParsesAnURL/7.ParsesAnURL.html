@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">7.ParsesAnURL</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a script that parses an URL address given in the format:
+        [protocol]://[server]/[resource]
+and extracts from it the [protocol], [server] and [resource] elements. Return the elements in a JSON object.
+        For example from the URL http://www.devbg.org/forum/index.php the following information should be extracted:
+        {protocol: "http", server: "www.devbg.org", 
+ resource: "/forum/index.php"}
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.ReverseString/1.ReverseString.html">1.ReverseString</a>    
+    <a href ="../2.CheckBracketsInExpression/2.CheckBracketsInExpression.html">2.CheckBracketsInExpression</a>
+    <a href ="../3.CountSubstringContained/3.CountSubstringContained.html">3.CountSubstringContained</a>
+    <a href ="../4.ChangeTextInRegions/4.ChangeTextInRegions.html">4.ChangeTextInRegions</a>
+    <a href ="../5.ReplaceTextWithWhiteSpaces/5.ReplaceTextWithWhiteSpaces.html">5.ReplaceTextWithWhiteSpaces</a>
+    <a href ="../6.ExtractContentOfHTML/6.ExtractContentOfHTML.html">6.ExtractContentOfHTML</a>
+    <a href ="../7.ParsesAnURL/7.ParsesAnURL.html">7.ParsesAnURL</a>
+    <a href ="../8.ExtractEmailsFromText/8.ExtractEmailsFromText.html">8.ExtractEmailsFromText</a>
+    <a href ="../9.ExtractEmailsFromText/9.ExtractEmailsFromText.html">9.ExtractEmailsFromText</a>
+    <a href ="../10.ExtractPalindromesFromText/10.ExtractPalindromesFromText.html">10.ExtractPalindromesFromText</a>
+    <a href ="../11.FormatsStringUsingPlaceholders/11.FormatsStringUsingPlaceholders.html">11.FormatsStringUsingPlaceholders</a>
+    <a href ="../12.CreateHTMLULuseHTMLLI/12.CreateHTMLULuseHTMLLI.html">12.CreateHTMLULuseHTMLLI</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="url">URl : </label>
+    <input type="text" class="biginput" id="url" />
+    <div class="check" ><a href="#" class="check" onclick ="parseURL()">Check...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/zuZWpIQENBo"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       function parseURL() {
+           var url = jsConsole.read("#url");
+           jsConsole.writeLine(url);
+           var protokol = url.substring(0, url.indexOf(":"));
+           var server = url.substring(url.indexOf(":") + 3, url.indexOf("/", url.indexOf(":") + 3));
+           var resource = url.substr(url.indexOf("/", url.indexOf(":") + 3) + 1)
+           var URLJSON = { "Protokol": protokol, "Server": server, "Resource": resource };
+           jsConsole.writeLine("Protokol :"+ URLJSON.Protokol);
+           jsConsole.writeLine("Server :" + URLJSON.Server);
+           jsConsole.writeLine("Resource :" + URLJSON.Resource);
+       }
+
+    </script>
+
+</body>
+</html>

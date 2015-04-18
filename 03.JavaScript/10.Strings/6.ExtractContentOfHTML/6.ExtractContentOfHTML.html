@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">6.ExtractContentOfHTML</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags:
+       
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.ReverseString/1.ReverseString.html">1.ReverseString</a>    
+    <a href ="../2.CheckBracketsInExpression/2.CheckBracketsInExpression.html">2.CheckBracketsInExpression</a>
+    <a href ="../3.CountSubstringContained/3.CountSubstringContained.html">3.CountSubstringContained</a>
+    <a href ="../4.ChangeTextInRegions/4.ChangeTextInRegions.html">4.ChangeTextInRegions</a>
+    <a href ="../5.ReplaceTextWithWhiteSpaces/5.ReplaceTextWithWhiteSpaces.html">5.ReplaceTextWithWhiteSpaces</a>
+    <a href ="../6.ExtractContentOfHTML/6.ExtractContentOfHTML.html">6.ExtractContentOfHTML</a>
+    <a href ="../7.ParsesAnURL/7.ParsesAnURL.html">7.ParsesAnURL</a>
+    <a href ="../8.ExtractEmailsFromText/8.ExtractEmailsFromText.html">8.ExtractEmailsFromText</a>
+    <a href ="../9.ExtractEmailsFromText/9.ExtractEmailsFromText.html">9.ExtractEmailsFromText</a>
+    <a href ="../10.ExtractPalindromesFromText/10.ExtractPalindromesFromText.html">10.ExtractPalindromesFromText</a>
+    <a href ="../11.FormatsStringUsingPlaceholders/11.FormatsStringUsingPlaceholders.html">11.FormatsStringUsingPlaceholders</a>
+    <a href ="../12.CreateHTMLULuseHTMLLI/12.CreateHTMLULuseHTMLLI.html">12.CreateHTMLULuseHTMLLI</a>
+    </div>
+
+      <!--Input-->
+<!--    <div class="input">
+    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>-->
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/zuZWpIQENBo"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       jsConsole.writeLine("That's how it appears with the tags!");
+       jsConsole.writeLine("---------------------------------------------------");
+       jsConsole.writeLine('<html><head><title>Sample site' +
+           '</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>');
+       jsConsole.writeLine();
+       var text = "<html><head><title>Sample site" +
+           "</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>";
+       jsConsole.writeLine("---------------------------------------------------");
+       jsConsole.writeLine("That's how it appears when the content of the tags is extracted !");
+       jsConsole.writeLine();
+       jsConsole.writeLine(extractContent(text));
+       jsConsole.writeLine("---------------------------------------------------");
+       function extractContent(text) {
+           var extractedText = buildStringBuilder();
+           var indexRigthBraket = text.indexOf(">");
+           while (indexRigthBraket > -1 && indexRigthBraket != text.length - 1) {
+               if (text[indexRigthBraket + 1] != "<") {
+                   var stringStart = text.substring(indexRigthBraket + 1, text.indexOf("<", indexRigthBraket + 1));
+                   // var stringEnd = text.indexOf("<", indexRigthBraket + 1);
+                   extractedText.append(stringStart).append(" ");
+               }
+               var indexRigthBraket = text.indexOf(">", indexRigthBraket + 1);
+           }
+           return extractedText.toString();
+       }
+       function buildStringBuilder() {
+           return {
+               strs: [],
+               len: 0,
+               append: function (str) {
+                   this.strs[this.len++] = str;
+                   return this;
+               },
+               toString: function () {
+                   return this.strs.join("");
+               }
+           };
+       }
+
+
+    </script>
+
+</body>
+</html>

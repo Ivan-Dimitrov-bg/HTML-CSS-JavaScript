@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">1.MultipliedBy5Array</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Arrays </div>    
+    <div class="task">Write a script that allocates array of 20 integers and initializes each element by its index multiplied by 5. Print the obtained array on the console.
+</div>
+    <div class ="allTasks">
+    <a href ="../1.MultipliedBy5Array/1.MultipliedBy5Array.html">1.MultipliedBy5Array</a>
+    <a href ="../2.ComparesTwoCharArrays/2.ComparesTwoCharArrays.html">2.ComparesTwoCharArrays</a>
+    <a href ="../3.MaxEqualSequence/3.MaxEqualSequence.html">3.MaxEqualSequence</a>
+    <a href ="../4.MaxIncreasingSequence/4.MaxIncreasingSequence.html">4.MaxIncreasingSequence</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">5.SelectionSortAlgorithm</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">6.MostFrequentNumber</a>
+    <a href ="../7.BinarySearchAlgorithm/7.BinarySearchAlgorithm.html">7.BinarySearchAlgorithm</a>
+    </div>
+
+      <!--Input-->
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/eN6FvSSOTc0"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution--> 
+    <script>
+            //Initialing an array in JavaScript can be done in three ways:
+               // 01. var arr = new Array(1,2,3,4,5);
+               // 02. var arr = new Array(10);
+               // 03. var arr = [1, 2, 3, 4, 5];
+            jsConsole.write("First Array : ");
+            var firstArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+            for (var i in firstArr) {
+                jsConsole.write(firstArr[i] + " ");
+            }
+           jsConsole.writeLine();
+           jsConsole.writeLine("---------------------")
+           jsConsole.write("Multiplied By 5:  ")
+            var secondArr = new Array(20);
+            for (var i = 0; i < firstArr.length; i++) {
+                secondArr[i] = firstArr[i] * 5; 
+            }
+
+            for (var i in secondArr) {
+                jsConsole.write(secondArr[i] + " ");
+
+            }
+    </script>
+</body>
+</html>

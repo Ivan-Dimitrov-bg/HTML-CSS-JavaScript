@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">7.FirstBiggestElement</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+        <div class="task">Write a Function that returns the index of the first element in array that is bigger than its neighbors, or -1, if there’s no such element.
+Use the function from the previous exercise.
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.LastDigitsEngWords/1.LastDigitsEngWords.html">1.LastDigitsEngWords</a>
+    <a href ="../2.ReverseNumber/2.ReverseNumber.html">2.ReverseNumber</a>
+    <a href ="../3.OccurrencesOfWordInText/3.OccurrencesOfWordInText.html">3.OccurrencesOfWordInText</a>
+    <a href ="../4.NumberOfDivs/4.NumberOfDivs.html">4.NumberOfDivs</a>
+    <a href ="../5.CountNumberAppearsInArray/5.CountNumberAppearsInArray.html">5.CountNumberAppearsInArray</a>
+    <a href ="../6.CompareNeighborsInArray/6.CompareNeighborsInArray.html">6.CompareNeighborsInArray</a>
+    <a href ="../7.FirstBiggestElement/7.FirstBiggestElement.html">7.FirstBiggestElement</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+<!--    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>-->
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Find number</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        //<div id="js-console">This is the array[2, 1, 1, 4, 6, 3, 6, 8, 6, 2]</div>
+        //<script src="scripts/js-console.js"></script>
+        <script>
+ 
+            var index = onPrintSignBtnClick();
+            jsConsole.writeLine("index: " + index);
+ 
+            function onPrintSignBtnClick() {
+       
+ 
+                var newArray = [2, 1, 1, 4, 6, 3, 6, 8, 6, 2];
+                jsConsole.writeLine("Some Array : ");
+                jsConsole.writeLine(newArray);
+                for (var i = 1; i < newArray.length-2; i++) {
+                    if (newArray[i]> newArray[i-1] && newArray[i]>newArray[i+1])
+                    {
+                        return i;
+                        break
+                    }
+                }
+                return -1;           
+            }
+        </script>
+
+</body>
+</html>

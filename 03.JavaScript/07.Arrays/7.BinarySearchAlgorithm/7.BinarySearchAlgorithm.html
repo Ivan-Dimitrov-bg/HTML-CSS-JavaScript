@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">7.BinarySearchAlgorithm</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Arrays </div>          
+    <div class="task">Write a program that finds the index of given element in a sorted array of integers by using the binary search algorithm (find it in Wikipedia)
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.MultipliedBy5Array/1.MultipliedBy5Array.html">1.MultipliedBy5Array</a>
+    <a href ="../2.ComparesTwoCharArrays/2.ComparesTwoCharArrays.html">2.ComparesTwoCharArrays</a>
+    <a href ="../3.MaxEqualSequence/3.MaxEqualSequence.html">3.MaxEqualSequence</a>
+    <a href ="../4.MaxIncreasingSequence/4.MaxIncreasingSequence.html">4.MaxIncreasingSequence</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">5.SelectionSortAlgorithm</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">6.MostFrequentNumber</a>
+    <a href ="../7.BinarySearchAlgorithm/7.BinarySearchAlgorithm.html">7.BinarySearchAlgorithm</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="array">Enter Array:(Format: 1, 22, 3..):</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="array">Surch number in Array:</label>
+    <input type="text"  id="Text1"/>
+    <div><a href="#" class="check" onclick ="Solutions()">Check ...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/eN6FvSSOTc0"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function orderBy(a, b) {
+            return (a == b) ? 0 : (a > b) ? 1 : -1;
+        };
+        function Solutions() {
+            var arr1 = jsConsole.read("#array").toString().split(",");
+            function orderBy(a, b) { // use to sort array
+                //return (a == b) ? 0 : (a > b) ? 1 : -1;	 
+                return a - b;
+            };
+            arr1.sort(orderBy);
+            // multiplay evry sinle element on the array to convert him in integer.(ther is a problem when number is greader then 10 )
+            var arr = new Array(arr1.length);       
+            for (var i in arr1) {
+                arr[i] = arr1[i] * 1;
+            }
+            jsConsole.write(arr.join(" "));
+            jsConsole.writeLine();
+
+            var left = arr[0];
+            var right = arr[arr.length - 1];
+            var middle = (left + right) / 2;
+            var element = 6;
+            while (left <= right) {
+                middle = (left + right) / 2 | 0;
+                //test
+                //jsConsole.writeLine("----------------")
+                //jsConsole.writeLine("left " + left);
+                //jsConsole.writeLine("middle " + middle);
+                //jsConsole.writeLine("right " + right);
+                //jsConsole.writeLine("arr[middle] " + arr[middle]);
+                if (arr[middle] == element) {
+                    break;
+                }
+                else if (arr[middle] < element) {
+                    left = middle + 1;
+
+                }
+                else {
+                    right = middle - 1;
+                }
+
+            }
+            jsConsole.writeLine("position " + middle);
+            jsConsole.writeLine("element " + element);
+            if (position != arr[middle]) {
+                jsConsole.writeLine("the element" + element + "does not exist in array");
+
+            }
+        }
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

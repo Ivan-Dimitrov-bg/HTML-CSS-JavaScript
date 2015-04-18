@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">5.CountNumberAppearsInArray</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+        <div class="task">Write a function that counts how many times given number appears in given array. Write a test function to check if the function is working correctly.
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.LastDigitsEngWords/1.LastDigitsEngWords.html">1.LastDigitsEngWords</a>
+    <a href ="../2.ReverseNumber/2.ReverseNumber.html">2.ReverseNumber</a>
+    <a href ="../3.OccurrencesOfWordInText/3.OccurrencesOfWordInText.html">3.OccurrencesOfWordInText</a>
+    <a href ="../4.NumberOfDivs/4.NumberOfDivs.html">4.NumberOfDivs</a>
+    <a href ="../5.CountNumberAppearsInArray/5.CountNumberAppearsInArray.html">5.CountNumberAppearsInArray</a>
+    <a href ="../6.CompareNeighborsInArray/6.CompareNeighborsInArray.html">6.CompareNeighborsInArray</a>
+    <a href ="../7.FirstBiggestElement/7.FirstBiggestElement.html">7.FirstBiggestElement</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Find number</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function countNumberInArray(arrNumber, number) {
+            var count = 0;
+            for (var i = 0; i < arrNumber.length; i++) {
+                if (arrNumber[i] == number) {
+                    jsConsole.writeLine(arrNumber[i] + " == " + number);
+
+                    count++;
+                }
+            }
+            jsConsole.writeLine("The number " + number + " exist " + count + " times in array");
+        }
+
+        function countNumbers() {
+            var numberInput = jsConsole.read("#array");
+            var arrNumber = numberInput.split(", ");
+            var number = jsConsole.read("#number");
+            jsConsole.writeLine(arrNumber);
+            jsConsole.writeLine(number);
+            countNumberInArray(arrNumber, number);
+            
+        }
+        // TODO unit testing
+        
+
+
+
+        
+        
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">5.TheBit3</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Operators-Expressions </div>
+    <div class="task">Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.</div>
+    <div class ="allTasks">
+    <a href ="../1.OddOrEven/1.OddOrEven.html">1.OddOrEven</a>
+    <a href ="../2.BooleanDivided7And5/2.BooleanDivided7And5.html">2.BooleanDivided7And5</a>
+    <a href ="../3.RectanglesArea/3.RectanglesArea.html">3.RectanglesArea</a>
+    <a href ="../4.ThirdDigit/4.ThirdDigit.html">4.ThirdDigit</a>
+    <a href ="../5.TheBit3/5.TheBit3.html">5.TheBit3</a>
+    <a href ="../6.CheckIfPointIsWithinACircle/6.CheckIfPointIsWithinACircle.html">6.CheckIfPointIsWithinACircle</a>
+    <a href ="../7.CheckPrime/7.CheckPrime.html">7.CheckPrime</a>
+    <a href ="../8.TrapezoidArea/8.TrapezoidArea.html">8.TrapezoidArea</a>
+    <a href ="../9.PointPositionCircleAndRectangle/9.PointPositionCircleAndRectangle.html">9.PointPositionCircleAndRectangle</a>
+    </div>
+
+    <!--Input-->
+    <div class="input">
+    <label for="checkNumber">Number: </label>
+    <input type="text" id="checkNumber"/>
+    <div><a href="#" class= "check" onclick ="theBit3()">Check Number</a></div>
+    </div>
+
+    <hr/>
+     <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/qF7HcvQnO10"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+
+    <!--Solution-->
+	<script>
+	    jsConsole.writeLine("Example")
+	    for (var i = 0; i < 10; i++) {
+	        jsConsole.write("Number: " + i + " > ");
+	        var mask = 1 << 3
+	        jsConsole.write(i.toString(2) + " > ");
+	        jsConsole.writeLine((i & mask) != 0 ? 1 : 0);
+	    }
+	    function theBit3() {
+            
+            jsConsole.writeLine("Try it :)")
+            var number = jsConsole.readFloat("#checkNumber");
+            jsConsole.write("Number: " + number + " > ");
+	        jsConsole.write(number.toString(2)+ " > ");
+	        var mask2 = 1 << 3;
+	        jsConsole.writeLine((number & mask2) != 0 ? 1 : 0);
+	    }
+    </script>
+</body>
+</html>

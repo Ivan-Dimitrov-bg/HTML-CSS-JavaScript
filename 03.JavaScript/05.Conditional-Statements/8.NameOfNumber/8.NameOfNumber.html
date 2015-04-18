@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">8.NameOfNumber</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+        <div class="task">Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation. 
+        Examples:
+        0 > "Zero"
+        273 > "Two hundred seventy three"
+        400 > "Four hundred"
+        501 > "Five hundred and one"
+        711 > "Seven hundred and eleven"
+</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="number">Number:</label>
+    <input type="text" id="number"/>
+    <div><a href="#" class= "check" onclick ="NameOfNumber()">Check ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+
+        counter = 1;
+
+        function NameOfNumber() {
+            var number = jsConsole.readFloat("#number");
+            var enterIsNotANumber = isNaN(number);
+            if ((number < 0) || (number > 999) || (enterIsNotANumber))
+            {
+                jsConsole.writeLine("Please, enter number between 0 and 999");
+            }
+
+            var first = number.toString().slice(0, 1);
+            var second = number.toString().slice(1, 2);
+            var third = number.toString().slice(2);
+                
+            if (number <= 20) {
+                jsConsole.writeLine(methodName(number));
+            }
+            else if (number < 100) {
+                jsConsole.writeLine(methodName(first +"0") +" "+ methodName(second));
+            }
+            else if (number > 99)
+            {
+                if (second == 0 && third == 0) {
+                    jsConsole.writeLine(methodName(first) + " " + methodName(first + "0" + "0"));
+
+                }
+                else {
+                    jsConsole.writeLine(methodName(first) + " " + methodName(first + "0" + "0") + " " + ((second == 0 || second == 1) ? "and" : (third == 0 ? "" : (methodName(second + "0")))) + " " + ((second == 1 || third == 0) ? methodName(second + third) : methodName(third)));
+                }
+            }
+
+            }
+
+        function methodName(value) 
+        {
+            
+            var temp = "";
+              temp = (
+              (value == 0) ? "zero" :
+              (value == 1) ? "one" :
+              (value == 2) ? "two" :
+              (value == 3) ? "three" :
+              (value == 4) ? "four" :
+              (value == 5) ? "five" :
+              (value == 6) ? "six" :
+              (value == 7) ? "seven" :
+              (value == 8) ? "eight" :
+              (value == 9) ? "nine":
+              (value == 11)? "eleven" :
+              (value == 12) ? "twelve" :
+              (value == 13) ? "thirteen" :
+              (value == 14) ? "fourteen" :
+              (value == 15) ? "fifteen" :
+              (value == 16) ? "sixteen" :
+              (value == 17) ? "seventeen" :
+              (value == 18) ? "eighteen" :
+              (value == 19) ? "nineteen" :
+              (value == 10) ? "ten" :
+              (value == 20) ? "twenty" :
+              (value == 30) ? "thirty" :
+              (value == 40) ? "fourty" :
+              (value == 50) ? "fifty" :
+              (value == 60) ? "sixty" :
+              (value == 70) ? "seventy" :
+              (value == 80) ? "eighty" :
+              (value == 90) ? "ninety" : "hundred");
+            
+              return temp;
+        }
+            
+
+    </script>
+</body>
+</html>
+

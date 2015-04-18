@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">5.FindYngestManAndPrintName</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a function that finds the youngest person in a given array of persons and prints his/hers full name
+Each person have properties firstname, lastname and age, as shown:
+
+        var persons = [
+  {firstname : "Gosho", lastname: "Petrov", age: 32}, 
+  {firstname : "Bay", lastname: "Ivan", age: 81},…];
+
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.WorkingWithShapes/1.WorkingWithShapes.html">1.WorkingWithShapes</a>    
+    <a href ="../2.RemovesAllElements/2.RemovesAllElements.html">2.RemovesAllElements</a>
+    <a href ="../3.DeepCopyOfObject/3.DeepCopyOfObject.html">3.DeepCopyOfObject</a>
+    <a href ="../4.IsObjectContainAProperty/4.IsObjectContainAProperty.html">4.IsObjectContainAProperty</a>
+    <a href ="../5.FindYngestManAndPrintName/5.FindYngestManAndPrintName.html">5.FindYngestManAndPrintName</a>
+    <a href ="../6.GroupsArrayOfPersons/6.GroupsArrayOfPersons.html">6.GroupsArrayOfPersons</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       function findYoungest(arr) {
+           var youngestPersonPosition = 0;
+           var youngestPersonAge = 200;
+
+           for (var i in arr) {
+               if (arr[i].age < youngestPersonAge) {
+                   youngestPersonAge = arr[i].age;
+                   youngestPersonPosition = i;
+               }
+           }
+
+           jsConsole.write(arr[youngestPersonPosition].firstname + "</br>"
+                         + arr[youngestPersonPosition].lastname + "</br>" +  "Age : "
+                         + arr[youngestPersonPosition].age + "</br>");
+       }
+
+       var persons = [
+       { firstname: "Gosho", lastname: "Petrov", age: 32 },
+       { firstname: "Bay", lastname: "Ivan", age: 81 },
+       { firstname: "Ivan", lastname: "Petrov", age: 9 }];
+
+       findYoungest(persons);
+    </script>
+
+</body>
+</html>

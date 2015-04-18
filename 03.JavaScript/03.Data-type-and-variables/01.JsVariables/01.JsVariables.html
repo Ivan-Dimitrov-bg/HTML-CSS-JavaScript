@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title" >01.JsVariables</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+   <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="titleHM">All Hm Data-type-and-variables </div>
+    <div class="task">Write an expression that checks if given integer is odd or even.</div>
+    <div class ="allTasks">
+    <a href ="../01.JsVariables/01.JsVariables.html">01.JsVariables</a>
+    <a href ="../02.StringVariable/02.StringVariable.html">02.StringVariable</a>
+    <a href ="../03.TypeOfvariables/03.TypeOfvariables.html">03.TypeOfvariables</a>
+    <a href ="../04.NullAndUndefined/04.NullAndUndefined.html">04.NullAndUndefined</a>
+    </div>
+    
+    <!--Input-->
+    <div class="input">
+    <div><a href="#" class= "check" onclick ="literals()">Literals</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/hGBc1Geveok"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+	<script>
+	    function literals() {
+	        var literalInt = 33;
+	        var floatLiteral = 5.95;
+	        var boolLiteral = true;
+	        var strLiteral = "String";
+	        var arrayLiteral = [44, "Lili", 17];
+	        var objectLiteral = {
+	            name: 'Dimo',
+	            age: 9,
+	        };
+	        jsConsole.writeLine("This literal is integer " + literalInt);
+	        jsConsole.writeLine("This literal is floating-point " + floatLiteral);
+	        jsConsole.writeLine("This literal is boolean " + boolLiteral);
+	        jsConsole.writeLine("This literal is string " + strLiteral);
+	        jsConsole.writeLine("This literal is array " + arrayLiteral);
+	        jsConsole.writeLine("Name: " + objectLiteral.name + " Age: " + objectLiteral.age);
+	    }
+	</script>
+</body>
+</html>

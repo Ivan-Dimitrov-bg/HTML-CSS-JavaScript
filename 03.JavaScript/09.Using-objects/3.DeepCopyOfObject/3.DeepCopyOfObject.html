@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">3.DeepCopyOfObject</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a function that makes a deep copy of an object
+The function should work for both primitive and reference types
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.WorkingWithShapes/1.WorkingWithShapes.html">1.WorkingWithShapes</a>    
+    <a href ="../2.RemovesAllElements/2.RemovesAllElements.html">2.RemovesAllElements</a>
+    <a href ="../3.DeepCopyOfObject/3.DeepCopyOfObject.html">3.DeepCopyOfObject</a>
+    <a href ="../4.IsObjectContainAProperty/4.IsObjectContainAProperty.html">4.IsObjectContainAProperty</a>
+    <a href ="../5.FindYngestManAndPrintName/5.FindYngestManAndPrintName.html">5.FindYngestManAndPrintName</a>
+    <a href ="../6.GroupsArrayOfPersons/6.GroupsArrayOfPersons.html">6.GroupsArrayOfPersons</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <div>
+        var a = {
+        a: 5,
+        b: 6,
+        c: "f",
+       }</div>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       var a = {
+           a: 5,
+           b: 6,
+           c: "f",
+       }
+
+       var b = Object.create(a);
+       jsConsole.write("Object Two :");
+       for (var i in b) {
+           jsConsole.write(b[i]);
+       }
+
+       //--------------USING OUR FUNCTION---------------//
+
+       function clone(obj) {
+           if (obj == null || "Object" != typeof obj) {
+               return obj;
+           }
+
+           if (obj instanceof Array) {
+               var copy = [];
+               for (var i = 0 ; i < obj.length ; i++) {
+                   copy[i] = clone(obj[i]);
+               }
+               return copy;
+           }
+
+           if (obj instanceof Object) {
+               var copy = {};
+               for (var attr in obj) {
+                   if (obj.hasOwnProperty(attr)) {
+                       copy[attr] = clone(obj[attr]);
+                   }
+               }
+               return copy;
+           }
+           throw new Error("Unable copy format!");
+       }
+       jsConsole.write("</br>");
+
+       var c = clone(a);
+       jsConsole.write("Object Three :");
+       for (var i in c) {
+           jsConsole.write(c[i]);
+       }
+    </script>
+
+</body>
+</html>

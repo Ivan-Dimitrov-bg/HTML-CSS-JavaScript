@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">3.MaxAndMinNumber</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Loops</div>      
+    <div class="task">Write a script that finds the max and min number from a sequence of numbers
+            Please enter number in format:3 56 12 111 23 
+</div>
+    <div class ="allTasks">
+    <a href ="../1.Print1toN/1.Print1toN.html">1.Print1toN</a>
+    <a href ="../2.Print1toNNotdivisibleBy3And7/2.Print1toNNotdivisibleBy3And7.html">2.Print1toNNotdivisibleBy3And7</a>
+    <a href ="../3.MaxAndMinNumber/3.MaxAndMinNumber.html">3.MaxAndMinNumber</a>
+    <a href ="../4.LexicographicallySmallAndLargest/4.LexicographicallySmallAndLargest.html">4.LexicographicallySmallAndLargest</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="number">N:</label>
+    <input type="text" class="biginput" id="number"/>
+    <div><a href="#"  class= "check" onclick ="Solutions()">Check ...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/6An8xusubNc"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function Solutions() {
+            // find max
+            var sequence = jsConsole.read("#number");
+            var sequenceNumbers = sequence.toString().split(" ")
+         
+            var biggestNumber = sequenceNumbers[1];
+            for (var i = 0; i < sequenceNumbers.length; i++) {
+                
+                if (parseInt(sequenceNumbers[i]) > biggestNumber) {
+                    biggestNumber = sequenceNumbers[i];
+                }
+            }
+            jsConsole.writeLine("the biggest number is: " + biggestNumber);
+
+            // finde min
+
+            var minNumber = biggestNumber;
+            for (var i = 0; i < sequenceNumbers.length; i++) {
+
+                if (parseInt(sequenceNumbers[i]) < minNumber) {
+                    minNumber = sequenceNumbers[i];
+                }
+            }
+            jsConsole.writeLine("the min number is: " + minNumber);
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">4.IsObjectContainAProperty</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+     <div class="titleHM">All Hm Using-objects </div>              
+    <div class="task">Write a function that checks if a given object contains a given property
+var obj  = …;
+var hasProp = hasProperty(obj,"length");
+</div>
+
+<div class ="allTasks">
+    <a href ="../1.WorkingWithShapes/1.WorkingWithShapes.html">1.WorkingWithShapes</a>    
+    <a href ="../2.RemovesAllElements/2.RemovesAllElements.html">2.RemovesAllElements</a>
+    <a href ="../3.DeepCopyOfObject/3.DeepCopyOfObject.html">3.DeepCopyOfObject</a>
+    <a href ="../4.IsObjectContainAProperty/4.IsObjectContainAProperty.html">4.IsObjectContainAProperty</a>
+    <a href ="../5.FindYngestManAndPrintName/5.FindYngestManAndPrintName.html">5.FindYngestManAndPrintName</a>
+    <a href ="../6.GroupsArrayOfPersons/6.GroupsArrayOfPersons.html">6.GroupsArrayOfPersons</a>
+    </div>
+
+      <!--Input-->
+   <!-- <div class="input">
+    <label for="array">Etnet Array:(format 1, 2, 32, 4 ...)</label>
+    <input type="text" class="biginput" id="array"/>
+    <br/>
+    <label for="number">Etnet Number:</label>
+    <input type="text" id="number"/>
+    
+    <div class="check" ><a href="#" class="check" onclick ="countNumbers()">Check...</a></div>
+    </div>-->
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/jW3z4TmApCs"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+   <script>
+       function hasProperty(obj, prpt) {
+           for (var i in obj) {
+               if (i == prpt) {
+                   return true;
+               }
+           }
+           return false;
+       }
+
+       var test = {
+           aveEi: 5,
+           blablabla: 7,
+           c: 9
+       }
+
+       var hasPropertyOf = hasProperty(test, "blablabla");
+       jsConsole.write("Checks if a object contains a property :'blablabla':"+ "<br/>"  + hasPropertyOf);
+    </script>
+
+</body>
+</html>

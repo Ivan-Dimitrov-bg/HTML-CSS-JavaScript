@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">2.ComparesTwoCharArrays</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Arrays </div>      
+    <div class="task">Write a script that compares two char arrays lexicographically (letter by letter).
+</div>
+    <div class ="allTasks">
+    <a href ="../1.MultipliedBy5Array/1.MultipliedBy5Array.html">1.MultipliedBy5Array</a>
+    <a href ="../2.ComparesTwoCharArrays/2.ComparesTwoCharArrays.html">2.ComparesTwoCharArrays</a>
+    <a href ="../3.MaxEqualSequence/3.MaxEqualSequence.html">3.MaxEqualSequence</a>
+    <a href ="../4.MaxIncreasingSequence/4.MaxIncreasingSequence.html">4.MaxIncreasingSequence</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">5.SelectionSortAlgorithm</a>
+    <a href ="../6.MostFrequentNumber/6.MostFrequentNumber.html">6.MostFrequentNumber</a>
+    <a href ="../7.BinarySearchAlgorithm/7.BinarySearchAlgorithm.html">7.BinarySearchAlgorithm</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="number">Array One:</label>
+    <input type="text" class="biginput" id="first"/>
+    <br/>
+    <label for="number">Array Two:</label>
+    <input type="text" class="biginput" id="second"/>
+    <div><a href="#" class="check" onclick ="Solutions()">Check ...</a></div>
+    </div>
+    <hr/>
+
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/eN6FvSSOTc0"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function Solutions() {
+            var arrOne = jsConsole.read("#first");
+            var arrTwo = jsConsole.read("#second");
+            // string is array from chars
+            
+            if (arrOne.length != arrTwo.length) {
+                jsConsole.writeLine("The lenght of the arrays is different.Please eter arrays with equal length");
+                jsConsole.writeLine("Please eter arrays with equal length");
+            }
+            else {
+                for (var i = 0; i < arrOne.length; i++) {
+                    if (arrOne[i] > arrTwo[i]) {
+                        jsConsole.writeLine("The " + arrOne[i] + " is bigger then " + arrTwo[i]);
+                        jsConsole.writeLine("First array is bigger lexicographically from second");
+                        break;
+                    }
+                    else if (arrOne[i] < arrTwo[i]) {
+                        jsConsole.writeLine("The " + arrOne[i] + " is smaller then " + arrTwo[i]);
+                        jsConsole.writeLine("Second array is bigger lexicographically from First");
+                        break;
+                    }
+                    else {
+                        jsConsole.writeLine("The " + arrOne[i] + " is equal to " + arrTwo[i]);
+                    }
+                }
+                if (arrOne == arrTwo) {
+                    jsConsole.writeLine("This arrays are equal");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

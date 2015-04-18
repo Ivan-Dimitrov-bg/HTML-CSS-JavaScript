@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title id="title">1.ExchangeValues</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+   <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+    <div class="task">Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="firstValue">First Value:</label>
+    <input type="text" id="firstValue"/>
+    <label for="secondValue">Sirst Value:</label>
+    <input type="text" id="secondValue"/>
+    <div><a href="#" class= "check" onclick ="ExchangeValues()">Check ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function ExchangeValues() {
+            var firstValue = jsConsole.readFloat("#firstValue");
+            var secondValue = jsConsole.readFloat("#secondValue");
+            var exchangeValue = 0;
+            var isFirstBigger = false;
+            if (firstValue > secondValue) {
+                exchangeValue = firstValue;
+                firstValue = secondValue;
+                secondValue = exchangeValue;
+                jsConsole.writeLine("First Value = " + firstValue);
+                jsConsole.writeLine("Second Value = " + secondValue);
+
+            }
+            else {
+                jsConsole.writeLine("Second Value is bigger or equal to the first Number");
+            }
+        }
+    </script>
+</body>
+</html>
+

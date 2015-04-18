@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title id="title">4.SortThreeNumb</title>
+    <link href="../../styles/js-console.css" rel="stylesheet" />
+    <link href="../../styles/styleInAllTasks.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="titleHM">All Hm Conditional-Statements </div>
+    <div class="task">Write a script that finds the biggest of three integers using nested if statements.</div>
+    <div class ="allTasks">
+    <a href ="../1.ExchangeValues/1.ExchangeValues.html">1.ExchangeValues</a>
+    <a href ="../2.ShowSign/2.ShowSign.html">2.ShowSign</a>
+    <a href ="../3.BiggestInt/3.BiggestInt.html">3.BiggestInt</a>
+    <a href ="../4.SortThreeNumb/4.SortThreeNumb.html">4.SortThreeNumb</a>
+    <a href ="../5.NameOfDigit/5.NameOfDigit.html">5.NameOfDigit</a>
+    <a href ="../6.QuadraticEquation/6.QuadraticEquation.html">6.QuadraticEquation</a>
+    <a href ="../7.CompareInteger/7.CompareInteger.html">7.CompareInteger</a>
+    <a href ="../8.NameOfNumber/8.NameOfNumber.html">8.NameOfNumber</a>
+    </div>
+
+      <!--Input-->
+    <div class="input">
+    <label for="firstValue">First Value:</label>
+    <input type="text" id="firstValue"/>
+    <label for="secondValue">Second Value:</label>
+    <input type="text" id="secondValue"/>
+    <label for="thirdValue">Third Value:</label>
+    <input type="text" id="thirdValue"/>
+    <div><a href="#" class= "check" onclick ="SortThreeNumb()">Check3 ...</a></div>
+    </div>
+    <hr/>
+    <!--Console-->
+    <div id="js-console"></div>
+    <script src="../../scripts/js-console.js"></script>
+
+    <!-- show Video-->
+    <iframe src="//www.youtube.com/embed/C7sev-ebpQY"></iframe>
+
+    <!--show html code in web-->
+    <pre id="code"></pre>
+    <script src="../../scripts/showHtmlContent.js"></script>
+     
+    <!--Solution-->
+    <script>
+        function SortThreeNumb() {
+
+            var firstValue = jsConsole.readFloat("#firstValue");
+            var secondValue = jsConsole.readFloat("#secondValue");
+            var thirdValue = jsConsole.readFloat("#thirdValue");
+
+            var isFirstBiggerThenSecond = (firstValue >= secondValue ? 1 : 0); // 1 - true   and 0 - false
+            var isSecondBiggerThenThird = (secondValue >= thirdValue ? 1 : 0); // 
+            var isThirdBiggerThenFirst = (thirdValue >= firstValue ? 1 : 0);
+
+            jsConsole.writeLine(isFirstBiggerThenSecond)
+            jsConsole.writeLine(isSecondBiggerThenThird)
+            jsConsole.writeLine(isThirdBiggerThenFirst)
+
+            jsConsole.writeLine
+                (isFirstBiggerThenSecond ? (isSecondBiggerThenThird ? (firstValue + " " + secondValue + " " + thirdValue)
+                                                                    : (firstValue + " " + thirdValue + " " + secondValue))
+                : isSecondBiggerThenThird ? (isThirdBiggerThenFirst ? (secondValue + " " + thirdValue + " " + firstValue)
+                                                                    : (secondValue + " " + thirdValue + " " + firstValue))
+                : (isThirdBiggerThenFirst ? (isFirstBiggerThenSecond ? (thirdValue + " " + firstValue + " " + secondValue)
+                                                                    : (thirdValue + " " + secondValue + " " + firstValue))
+                : ("Please enter three numbers")));
+            
+            if (firstValue == secondValue == thirdValue) {
+                jsConsole.writeLine("The numbars are equal");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+         
