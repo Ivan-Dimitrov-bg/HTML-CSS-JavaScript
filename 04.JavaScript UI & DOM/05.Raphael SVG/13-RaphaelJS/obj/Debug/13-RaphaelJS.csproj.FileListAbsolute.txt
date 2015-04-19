@@ -1,0 +1,6 @@
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\bin\13-RaphaelJS.dll.config
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\bin\13-RaphaelJS.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\bin\13-RaphaelJS.pdb
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\obj\Debug\13-RaphaelJS.csprojResolveAssemblyReference.cache
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\obj\Debug\13-RaphaelJS.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\04.JavaScript UI & DOM\05.Raphael SVG\13-RaphaelJS\obj\Debug\13-RaphaelJS.pdb

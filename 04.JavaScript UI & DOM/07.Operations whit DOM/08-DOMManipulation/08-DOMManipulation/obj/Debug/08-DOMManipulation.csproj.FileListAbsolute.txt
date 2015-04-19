@@ -1,0 +1,5 @@
+D:\01.Телерик Академи\02.OtherResourses\02.JS2\TelerikAcademy-master\TelerikAcademy-master\Javascript\08-DOMManipulation\08-DOMManipulation\bin\08-DOMManipulation.dll
+D:\01.Телерик Академи\02.OtherResourses\02.JS2\TelerikAcademy-master\TelerikAcademy-master\Javascript\08-DOMManipulation\08-DOMManipulation\bin\08-DOMManipulation.pdb
+D:\01.Телерик Академи\02.OtherResourses\02.JS2\TelerikAcademy-master\TelerikAcademy-master\Javascript\08-DOMManipulation\08-DOMManipulation\obj\Debug\08-DOMManipulation.csprojResolveAssemblyReference.cache
+D:\01.Телерик Академи\02.OtherResourses\02.JS2\TelerikAcademy-master\TelerikAcademy-master\Javascript\08-DOMManipulation\08-DOMManipulation\obj\Debug\08-DOMManipulation.dll
+D:\01.Телерик Академи\02.OtherResourses\02.JS2\TelerikAcademy-master\TelerikAcademy-master\Javascript\08-DOMManipulation\08-DOMManipulation\obj\Debug\08-DOMManipulation.pdb
