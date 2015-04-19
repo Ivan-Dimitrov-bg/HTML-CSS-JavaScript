@@ -1,0 +1,11 @@
+C:\Users\elek\Desktop\Simple-Number-Guesssing-Game-master\Number-Guesssing-Game-master\Simple Number Guessing Game\bin\Simple_Number_Guessing_Game.dll
+C:\Users\elek\Desktop\Simple-Number-Guesssing-Game-master\Number-Guesssing-Game-master\Simple Number Guessing Game\bin\Simple_Number_Guessing_Game.pdb
+C:\Users\elek\Desktop\Simple-Number-Guesssing-Game-master\Number-Guesssing-Game-master\Simple Number Guessing Game\obj\Debug\Number_Guessing_Game.csprojResolveAssemblyReference.cache
+C:\Users\elek\Desktop\Simple-Number-Guesssing-Game-master\Number-Guesssing-Game-master\Simple Number Guessing Game\obj\Debug\Simple_Number_Guessing_Game.dll
+C:\Users\elek\Desktop\Simple-Number-Guesssing-Game-master\Number-Guesssing-Game-master\Simple Number Guessing Game\obj\Debug\Simple_Number_Guessing_Game.pdb
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\bin\Simple_Number_Guessing_Game.dll.config
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\bin\Simple_Number_Guessing_Game.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\bin\Simple_Number_Guessing_Game.pdb
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\obj\Debug\Number_Guessing_Game.csprojResolveAssemblyReference.cache
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\obj\Debug\Simple_Number_Guessing_Game.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\02.Number Guessing Game\Simple Number Guessing Game\obj\Debug\Simple_Number_Guessing_Game.pdb

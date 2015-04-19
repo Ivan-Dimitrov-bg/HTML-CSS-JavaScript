@@ -1,0 +1,115 @@
+﻿body {
+}
+
+#wrapper {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 800px;
+    height: 600px;
+    background-color: #cac4c7;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button, .button:visited {
+    background:  #95e140;
+    display: inline-block;
+    position:absolute;
+    margin:70px 20px 20px 20px;
+    padding: 5px 10px 6px;
+    color: #222;
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 42px;
+    background-color: #95e140;
+    border-radius: 15px;
+}
+
+    .button:hover {
+
+        color:#95e140;
+    }
+
+    .button:active {
+        top: 1px;
+    }
+
+    .button, .button:visited,
+    .medium.button, .medium.button:visited {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    }
+
+.super.button, .super.button:visited {
+    font-size: 39px;
+    padding: 8px 14px 9px;
+}
+
+.green.button, .magenta.button:visited {
+    background-color: #95e140;
+}
+
+    .green.button:hover {
+        background-color: #222;
+    }
+
+#system-message {
+    display: none;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+#sheep-rams-message {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 140px;
+    margin-left: 10px;
+}
+
+#player-input {
+    display: none;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 298px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#nickname-input {
+    display: none;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 298px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#try-it-button, #enter-button {
+    display: none;
+    margin:70px 20px 20px 20px;
+}

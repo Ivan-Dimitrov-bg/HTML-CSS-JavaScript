@@ -1,0 +1,11 @@
+D:\01.Телерик Академи\01.Spring\otherProject\02.OtherResourses\TelerikAcademy-master\TelerikAcademy-master\JavaScript Frameworks\Homework Assignments\1. Underscore.js\1. Underscore.js\bin\_1.Underscore.js.dll
+D:\01.Телерик Академи\01.Spring\otherProject\02.OtherResourses\TelerikAcademy-master\TelerikAcademy-master\JavaScript Frameworks\Homework Assignments\1. Underscore.js\1. Underscore.js\bin\_1.Underscore.js.pdb
+D:\01.Телерик Академи\01.Spring\otherProject\02.OtherResourses\TelerikAcademy-master\TelerikAcademy-master\JavaScript Frameworks\Homework Assignments\1. Underscore.js\1. Underscore.js\obj\Debug\1. Underscore.js.csprojResolveAssemblyReference.cache
+D:\01.Телерик Академи\01.Spring\otherProject\02.OtherResourses\TelerikAcademy-master\TelerikAcademy-master\JavaScript Frameworks\Homework Assignments\1. Underscore.js\1. Underscore.js\obj\Debug\_1.Underscore.js.dll
+D:\01.Телерик Академи\01.Spring\otherProject\02.OtherResourses\TelerikAcademy-master\TelerikAcademy-master\JavaScript Frameworks\Homework Assignments\1. Underscore.js\1. Underscore.js\obj\Debug\_1.Underscore.js.pdb
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\bin\_1.Underscore.js.dll.config
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\bin\_1.Underscore.js.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\bin\_1.Underscore.js.pdb
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\obj\Debug\1. Underscore.js.csprojResolveAssemblyReference.cache
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\obj\Debug\_1.Underscore.js.dll
+D:\01.Телерик Академи\02.Summer\HTML-CSS-JavaScript\HTML-CSS-JavaScript\06.JavaScript Applications\01.Dive into Underscore\1. Underscore.js\1. Underscore.js\obj\Debug\_1.Underscore.js.pdb
